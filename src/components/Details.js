@@ -25,6 +25,7 @@ const Details = () => {
   return (
     <>
     <NavComponent/>
+    <h1> Detalle por Id - {datos.id} </h1>
       <div className='container'>
             <div className='row'>
                 <div className='col' key={datos.id}>

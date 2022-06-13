@@ -38,46 +38,49 @@ const AddCard = () => {
      },
    });
   return (
-        <form onSubmit={formik.handleSubmit}>
-        <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Nombre</label>
-            <input
-                className="form-control"
-                id="firstName"
-                name="firstName"
-                type="text"
-                onChange={formik.handleChange}
-                value={formik.values.firstName}
-       />
-       {formik.errors.firstName ? <div>{formik.errors.firstName}</div> : null}
-        </div>
-        <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Apellido</label>
-            <input
-            className="form-control"
-            id="lastName"
-            name="lastName"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.lastName}
-       />
-       {formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
-        </div>
-        <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Email</label>
-            <input
-            className="form-control"
-            id="email"
-            name="email"
-            type="email"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-       />
-       {formik.errors.email ? <div>{formik.errors.email}</div> : null}
-       
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
+    <>
+      <h1> Formulario de Validacion </h1>
+          <form onSubmit={formik.handleSubmit}>
+          <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Nombre</label>
+              <input
+                  className="form-control"
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  onChange={formik.handleChange}
+                  value={formik.values.firstName}
+         />
+         {formik.errors.firstName ? <div>{formik.errors.firstName}</div> : null}
+          </div>
+          <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Apellido</label>
+              <input
+              className="form-control"
+              id="lastName"
+              name="lastName"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.lastName}
+         />
+         {formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
+          </div>
+          <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Email</label>
+              <input
+              className="form-control"
+              id="email"
+              name="email"
+              type="email"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+         />
+         {formik.errors.email ? <div>{formik.errors.email}</div> : null}
+         
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+          </form>
+    </>
   )
 }
 

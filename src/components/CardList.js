@@ -32,6 +32,7 @@ export const CardList = () => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
   return (
     <>
+    <h1> Lista de Rickandmorty </h1>
         <div className='container'>
             <div className='row'>
                 { currentDatos.map(dato => 

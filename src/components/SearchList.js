@@ -34,6 +34,7 @@ const SearchList = () => {
   return (
     <>
     <NavComponent/>
+    <h1>Buscador para mortyandmorphy</h1>
     <div className="mb-3">
       <label  className="form-label">Buscador de Imagenes</label>
         <input type="text" placeholder="ingrese el nombre a buscar" name='seach' className="form-control" value={search} onChange={handleSearchChange} />
